@@ -1,0 +1,14 @@
+language: ruby
+
+# Version number
+rvm:
+  - 2.2.9
+  - 2.3.6
+  - 2.4.4
+  - "jruby-1.7.27"
+  - "jruby-9.1.15"
+   
+build:
+    
+  ci:
+    - ruby -v 
