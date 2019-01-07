@@ -5,14 +5,18 @@ runtime:
   
 # Version number
 rvm:
-  - 2.2.8
-  - 2.3.6
-  - 2.4.3
-  - 2.5.0
+  - 2.2.10
+  - 2.3.7
+  - 2.4.4
+  - 2.5.1
   - "jruby-1.7.27"
-  - "jruby-9.1.15"
-   
+  - "jruby-9.1.17.0"
+
 build:
+  pre_ci_boot:
+    image_name: drydock/u14ruball
+    image_tag: v6.5.4
+    pull: true
     
   ci:
     - ruby -v 
